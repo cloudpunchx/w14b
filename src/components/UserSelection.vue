@@ -41,7 +41,7 @@
 
 <style scoped>
 img{
-    width: 10vw;
+    width: 5vw;
     margin: 15px;
 }
 button{
