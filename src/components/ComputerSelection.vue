@@ -1,6 +1,6 @@
 <template>
     <div>
-        <button @click="randomSelection">Opponent Play!</button>
+        <img :src="compSelectionImg">
     </div>
 </template>
 
@@ -13,12 +13,12 @@
             }
         },
         methods: {
-            randomSelection() {
-                
+            randomSelection(img) {
+                this.compSelectionImg = img;
             }
         },
         mounted () {
-            this.$root.$on(``);
+            this.$root.$on(`getRandomChoice`, this.randomSelection);
         },
     }
 </script>
