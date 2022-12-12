@@ -4,9 +4,7 @@
         <div>
             <p>Your Score: {{userScore}}</p>
             <p>Opponent: {{compScore}}</p>
-
-            <!-- set If statement If scores = 10 then show -->
-            <p v-if="winner">{{winner}} wins!</p>
+            <p>Winner: {{winner}}</p>
         </div>
     </div>
 </template>
